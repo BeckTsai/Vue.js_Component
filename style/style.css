@@ -1,0 +1,102 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  padding: 20px;
+}
+
+.col_edit {
+  background: #f4f4f4;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.col_room {
+  padding: 20px;
+}
+
+.room_container {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.room_container:hover .cover {
+  background-size: 110% auto;
+}
+
+.room_container > .cover {
+  height: 200px;
+  position: relative;
+  background-size: 100% auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-position: center center;
+}
+
+.room_container > .cover > i.fa.fa-times {
+  position: absolute;
+  font-size: 2rem;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.room_container > .cover > i.fa.fa-times:hover {
+  color: #db4343;
+}
+
+.room_container > .cover > h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  padding: 5px 15px;
+  background-color: #fff;
+}
+
+.room_container > .info {
+  padding: 10px;
+}
+
+.room_container > .info > h5 {
+  font-size: 20px;
+}
+
+.room_container > .info > h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.room_container > .info > h4 > .final_price {
+  color: #db4343;
+}
+
+.room_container > .info > h4 > .final_price:after {
+  content: '$';
+}
+
+.col_edit,
+.col_rooms {
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+
+.room_edit {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */
